@@ -4,11 +4,13 @@ import Balance from "./components/Balance";
 import AddTransaction from "./components/AddTransaction"
 import IncomeList from "./components/IncomeList";
 import ExpenseList from "./components/ExpenseList";
+import {GlobalContext, GlobalContextProvider} from "./context/GlobalState";
 import "./App.css";
 
 const App = () => {
   return (
-    <div className="container">
+    <GlobalContextProvider>
+        <div className="container">
       <div className="app-wrapper">
         <Header/>
         <Balance/>
@@ -16,8 +18,9 @@ const App = () => {
         <IncomeList/>
         <ExpenseList/>
       </div>
-      
     </div>
+    </GlobalContextProvider>
+  
   )
 }
 export default App;
