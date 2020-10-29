@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from "./components/Header";
+import Balance from "./components/Balance";
 import "./App.css";
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <div className="container">
       <div className="app-wrapper">
         <Header/>
+        <Balance/>
       </div>
       
     </div>
